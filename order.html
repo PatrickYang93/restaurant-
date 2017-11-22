@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>YaYa Kitchen</title>
+      <!-- 
+         YaYa Kitchen order web page
+         Filename: index.html
+
+         Author:   Qiguang Yang	
+         Date:     3/29/2016
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="../WebsiteProject/modernizr.custom.40753.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="../WebsiteProject/styles.css">
+   </head>
+   <p class="skipnavigation"><a href="#contentstart">Skip Navigation</a></p>
+   <body>
+         <header>
+         <img id="logo" src="../WebsiteProject/images/logo.jpg" alt="rf" width="55" height="55" id="logo" align="left">
+            <h1>YaYa Kitchen</h1>
+            <nav class="sitenavigation">
+            	<p><a href="../WebsiteProject/index.html" >Home</a></p>
+                <p><a href="../WebsiteProject/menu.html">Menu</a></p>
+                <p><a href="../WebsiteProject/order.html">Order Now!</a></p>
+                <p><a href="../WebsiteProject/reserve.html">Reservations</a></p>
+                <p><a href="../WebsiteProject/aboutus.html">About Us</a></p>
+                <p><a href="https://goo.gl/maps/fWWRZ1myCp62" target="_blank">Directrions</a></p>
+            </nav>
+         </header>
+         <article>
+            <h2>Online Order</h2>
+            <form action="confirm.html">
+            	<fieldset class="contactinfo">
+                	<legend>Contact Information</legend>
+                    <label for="nameinput">
+                    	Name
+                        <input type="text" name="name" id="nameinput" placeholder="First and last name">
+                    </label>
+                    <label for="emailinput">
+                    	Email
+                        <input type="email" name="email" id="emailinput" placeholder="address@example.com">
+                    </label>
+                    <label for="phoneinput">
+                    	Phone
+                        <input type="tel" name="phone" id="phoneinput">
+                    </label>	
+                </fieldset>
+                <fieldset class="reserveinfo">
+                	<legend>Reservation Information</legend>
+                    	<fieldset class="schedule">
+                        	<legend>Schedule</legend>
+                            <div class="date-picker">
+                            	<label for="month">Reserve date: Month
+                                </label>
+                                <select id="month"
+                                name="month">
+                                	<option value="01">January</option>
+                                    <option value="02">february</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">Hanuary</option>
+                                    <option value="11">November</option>
+                                    <option value="12">Hanuary</option>
+                               </select>
+                               <label for="day">Day
+                               </label>
+                               <select id="day"
+                               name="day">
+                               <option value="01">1</option>
+                               <option value="02">2</option>
+                               <option value="03">3</option>
+                               <option value="04">4</option>
+                               <option value="05">5</option>
+                               <option value="06">6</option>
+                               <option value="07">7</option>
+                               <option value="08">8</option>
+                               <option value="09">9</option>
+                               <option value="10">10</option>
+                               <option value="11">11</option>
+                               <option value="12">12</option>
+                               <option value="13">13</option>
+                               <option value="14">14</option>
+                               <option value="15">15</option>
+                               <option value="16">16</option>
+                               <option value="17">17</option>
+                               <option value="18">18</option>
+                               <option value="19">19</option>
+                               <option value="20">20</option>
+                               <option value="21">21</option>
+                               <option value="22">22</option>
+                               <option value="23">23</option>
+                               <option value="24">24</option>
+                               <option value="25">25</option>
+                               <option value="26">26</option>
+                               <option value="27">27</option>
+                               <option value="28">28</option>
+                               <option value="29">29</option>
+                               <option value="30">30</option>
+                               <option value="31">31</option>
+                             </select>
+                             <label for="year">Year
+                             </label>
+                             <select id="year"
+                             name="year">
+                             	<option value="2019">2016</option>
+                                <option value="2020">2017</option>
+                                <option value="2021">2018</option>
+                             </select>
+                             <label for="time">Time
+                             </label>
+                             <select id="time"
+                             name="time">
+                             	<option value="11">11 AM</option>
+                                <option value="12">12 PM</option>
+                                <option value="13"> 1 PM</option>
+                                <option value="14"> 2 PM</option>
+                                <option value="15"> 3 PM</option>
+                                <option value="16"> 4 PM</option>
+                                <option value="17"> 5 PM</option>
+                                <option value="18"> 6 PM</option>
+                                <option value="19"> 7 PM</option>
+                                <option value="20"> 8 PM</option>
+                             </select>
+                           </div>       
+                        </fieldset>
+                        <fieldset class="location">
+                        	<legend>Where would you like to eat</legend>
+                            <label for="here">
+                            	<input type="radio" id="here" value="here" checked name="where">
+                                For here
+                            </label>
+                            <label for="go">
+                            	<input type="radio" id="go" value="go" name="where">
+                                To go
+                            </label>
+                        </fieldset>
+                </fieldset>
+              <fieldset class="orderinfo">
+                        	<legend>Order Info</legend>
+                            <p>Appetizers & Soup</p>
+                            <label for="Roll">
+                            	<input type="checkbox" id="Roll" value="Roll" name="room">
+                                Egg Roll
+                            </label>
+                            <br>
+                            <label for="Rangoon">
+                            	<input type="checkbox" id="Rangoon" value="Rangoon" name="Rangoon">
+                                Crab Rangoon
+                            </label>
+                            <br>
+                            <label for="Gyoza">
+                            	<input type="checkbox" id="Gyoza" value="Gyoza" name="Gyoza">
+                                Gyoza
+                            </label>
+                            <br>
+                            <label for="Eggsoup">
+                            	<input type="checkbox" id="Eggsoup" value="eggsoup" name="eggsoup">
+                                Egg Soup
+                            </label>
+                            <br>
+                            <label for="Wonton">
+                            	<input type="checkbox" id="Wonton" value="Wonton" name="Wonton">
+                                Wonton Soup
+                            </label>
+                            <br>
+                            <label for="Hotsoup">
+                            	<input type="checkbox" id="Hotsoup" value="Hotsoup" name="Hotsoup">
+                                Hot & Sour Soup
+                            </label>
+                            <br>
+                            <p>Chicken</p>
+                            <label for="ChickenBroccoli">
+                            	<input type="checkbox" id="ChickenBroccoli" value="Hotsoup" name="Hotsoup">
+                                Chicken with Broccoli
+                            </label>
+                            <br>
+                            <label for="ChickenVegetables">
+                            	<input type="checkbox" id="ChickenVegetables" value="ChickenVegetables" name="ChickenVegetables">
+                                Chicken with Vegetables
+                            </label>
+                            <br>
+                            <label for="SweetSourChicken">
+                            	<input type="checkbox" id="SweetSourChicken" value="SweetSourChicken" name="SweetSourChicken">
+                                Sweet & Sour Chicken
+                            </label>
+                            <br>
+                            <label for="AlmondChicken">
+                            	<input type="checkbox" id="AlmondChicken" value="AlmondChicken" name="AlmondChicken">
+                                Almond Chicken
+                            </label>
+                            <br>
+                            <label for="GarlicChicken">
+                            	<input type="checkbox" id="GarlicChicken" value="GarlicChicken" name="GarlicChicken">
+                                Garlic Chicken
+                            </label>
+                            <br>
+                            <label for="HunanChicken">
+                            	<input type="checkbox" id="HunanChicken" value="HunanChicken" name="HunanChicken">
+                                Hunan Chicken
+                            </label>
+                            <br>
+                            <label for="GeneralChicken">
+                            	<input type="checkbox" id="GeneralChicken" value="GeneralChicken" name="GeneralChicken">
+                                General Tso Chicken
+                            </label>
+                            <br>
+                            <label for="OrangeChicken">
+                            	<input type="checkbox" id="OrangeChicken" value="OrangeChicken" name="OrangeChicken">
+                                Orange Chicken
+                            </label>
+                            <br>
+                            <label for="SesameChicken">
+                            	<input type="checkbox" id="SesameChicken" value="SesameChicken" name="SesameChicken">
+                                Sesame Chicken
+                            </label>
+                            <br>
+                            <p>Beef</p>
+                            <label for="BeefBroccoli">
+                            	<input type="checkbox" id="BeefBroccoli" value="BeefBroccoli" name="BeefBroccoli">
+                                Beef with Broccoli
+                            </label>
+                            <br>
+                            <label for="BeefMushroom">
+                            	<input type="checkbox" id="BeefMushroom" value="BeefMushroom" name="BeefMushroom">
+                                Beef with Mushroom
+                            </label>
+                            <br>
+                            <label for="PepperSteak">
+                            	<input type="checkbox" id="PepperSteak" value="PepperSteak" name="PepperSteak">
+                                Pepper Steak
+                            </label>
+                            <br>
+                            <label for="SzechuanBeef">
+                            	<input type="checkbox" id="SzechuanBeef" value="SzechuanBeef" name="SzechuanBeef">
+                                Szechuan Beef
+                            </label>
+                            <br>
+                            <label for="MongolianBeef">
+                            	<input type="checkbox" id="MongolianBeef" value="MongolianBeef" name="MongolianBeef">
+                                Mongolian Beef
+                            </label>
+                            <br>
+                            <label for="HunanBeef">
+                            	<input type="checkbox" id="HunanBeef" value="HunanBeef" name="HunanBeef">
+                                Hunan Beef
+                            </label>
+                            <br>
+                            <label for="HotBeef">
+                            	<input type="checkbox" id="HotBeef" value="HotBeef" name="HotBeef">
+                                Hot & Spicy Beef
+                            </label>
+                            <br>
+                            <p>Shrimp</p>
+                            <label for="LobsterShrimp">
+                            	<input type="checkbox" id="LobsterShrimp" value="LobsterShrimp" name="HotBeef">
+                                Shrimp with Lobster Sauce
+                            </label>
+                            <br>
+                            <label for="ShrimpVegetables">
+                            	<input type="checkbox" id="ShrimpVegetables" value="ShrimpVegetables" name="ShrimpVegetables">
+                                Shrimp with vegetables
+                            </label>
+                            <br>
+                            <label for="SweetShrimp">
+                            	<input type="checkbox" id="SweetShrimp" value="SweetShrimp" name="SweetShrimp">
+                                Sweet & Sour Shrimp
+                            </label>
+                            <br>
+                            <label for="HunanShrimp">
+                            	<input type="checkbox" id="HunanShrimp" value="HunanShrimp" name="HunanShrimp">
+                                Hunan Shrimp
+                            </label>
+                            <br>
+                            <label for="KungShrimp">
+                            	<input type="checkbox" id="" value="KungShrimp" name="KungShrimp">
+                                Kung Pao Shrimp
+                            </label>
+                            <br>
+                             <label for="CrispyShrimp">
+                            	<input type="checkbox" id="CrispyShrimp" value="CrispyShrimp" name="CrispyShrimp">
+                                Crispy Shrimp
+                            </label>
+                            <br>
+                            <p>Pork</p>
+                            <label for="ChopSuey">
+                            	<input type="checkbox" id="ChopSuey" value="ChopSuey" name="ChopSuey">
+                                Pork Chop Suey
+                            </label>
+                            <br>
+                            <label for="HotPork">
+                            	<input type="checkbox" id="HotPork" value="HotPork" name="HotPork">
+                                Hot & Spicy Pork
+                            </label>
+                            <br>
+                            <label for="KungPork">
+                            	<input type="checkbox" id="KungPork" value="KungPork" name="KungPork">
+                                Kung Pao Pork
+                            </label>
+                            <br>
+                            <p>Vegetables</p>
+                            <label for="SzechuanTofu">
+                            	<input type="checkbox" id="SzechuanTofu" value="SzechuanTofu" name="SzechuanTofu">
+                                Szechuan Tofu
+                            </label>
+                            <br>
+                            <label for="VegetableDeluxe">
+                            	<input type="checkbox" id="VegetableDeluxe" value="" name="VegetableDeluxe">
+                                Vegetable Deluxe
+                            </label>
+                            <br>
+                            <p>Fried Rice</p>
+                            <label for="EggRice">
+                            	<input type="checkbox" id="EggRice" value="EggRice" name="EggRice">
+                                Egg Fried Rice
+                            </label>
+                            <br>
+                            <label for="VegetableRice">
+                            	<input type="checkbox" id="VegetableRice" value="VegetableRice" name="VegetableRice">
+                                Vegetable Fried Rice
+                            </label>
+                            <br>
+                            <label for="BeefRice">
+                            	<input type="checkbox" id="BeefRice" value="BeefRice" name="BeefRice">
+                                Beef Fried Rice
+                            </label>
+                            <br>
+                            <label for="ChickenRice">
+                            	<input type="checkbox" id="ChickenRice" value="ChickenRice" name="ChickenRice">
+                                Chicken Fried Rice
+                            </label>
+                            <br>
+                            <label for="PorkRice">
+                            	<input type="checkbox" id="PorkRice" value="PorkRice" name="PorkRice">
+                                Pork Fried Rice
+                            </label>
+                            <br>
+                            <label for="ShrimpRice">
+                            	<input type="checkbox" id="ShrimpRice" value="ShrimpRice" name="ShrimpRice">
+                                Shrimp Fried Rice
+                            </label>
+                            <br>
+                        </fieldset>
+                <fieldset class="additionalinfo">
+                	<legend>Additional Information</legend>
+                    <label for="feedback">
+                           Feedback, special requests, or other information
+                           <textarea name="feedback" id="feedback" rows="4" cols="55">
+                           </textarea>
+                    </label>
+                </fieldset>
+                <fieldset class="submitbutton">
+                	<input type="submit" id="submit" value="Sumit"
+                </fieldset>
+            </form>
+         </article>
+         <footer>
+            <p>25950 N Dixie Hwy, Perrysburg, OH 43551</p>
+         </footer>
+      </div>
+   </body>
+</html>

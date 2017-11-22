@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>YaYa Kitchen</title>
+      <!-- 
+         YaYa Kitchen reserve web page
+         Filename: index.html
+
+         Author:   Qiguang Yang	
+         Date:     3/29/2016
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="../WebsiteProject/modernizr.custom.40753.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="../WebsiteProject/styles.css">
+   </head>
+   <p class="skipnavigation"><a href="#contentstart">Skip Navigation</a></p>
+   <body>
+         <header>
+         <img id="logo" src="../WebsiteProject/images/logo.jpg" alt="rf" width="55" height="55" id="logo" align="left">
+            <h1>YaYa Kitchen</h1>
+            <nav class="sitenavigation">
+            	<p><a href="../WebsiteProject/index.html" >Home</a></p>
+                <p><a href="../WebsiteProject/menu.html">Menu</a></p>
+                <p><a href="../WebsiteProject/order.html">Order Now!</a></p>
+                <p><a href="../WebsiteProject/reserve.html">Reservations</a></p>
+                <p><a href="../WebsiteProject/aboutus.html">About Us</a></p>
+                <p><a href="https://goo.gl/maps/fWWRZ1myCp62" target="_blank">Directrions</a></p>
+            </nav>
+         </header>
+         <article>
+            <h2>Reservations</h2>
+            <p>We're happy to take reservations up to a year in advance by phone, fax, or email.</p>
+            <p>Feel free to contact us with any queries about Lakeland Reeds, or about planning your trip.</p>
+            <form action="confirm.html">
+            	<fieldset class="contactinfo">
+                	<legend>Contact Information</legend>
+                    <label for="nameinput">
+                    	Name
+                        <input type="text" name="name" id="nameinput" placeholder="First and last name">
+                    </label>
+                    <label for="emailinput">
+                    	Email
+                        <input type="email" name="email" id="emailinput" placeholder="address@example.com">
+                    </label>
+                    <label for="phoneinput">
+                    	Phone
+                        <input type="tel" name="phone" id="phoneinput">
+                    </label>	
+                </fieldset>
+                <fieldset class="reserveinfo">
+                	<legend>Reservation Information</legend>
+                    	<fieldset class="schedule">
+                        	<legend>Schedule</legend>
+                            <div class="date-picker">
+                            	<label for="month">Reserve date: Month
+                                </label>
+                                <select id="month"
+                                name="month">
+                                	<option value="01">January</option>
+                                    <option value="02">february</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">Hanuary</option>
+                                    <option value="11">November</option>
+                                    <option value="12">Hanuary</option>
+                               </select>
+                               <label for="day">Day
+                               </label>
+                               <select id="day"
+                               name="day">
+                               <option value="01">1</option>
+                               <option value="02">2</option>
+                               <option value="03">3</option>
+                               <option value="04">4</option>
+                               <option value="05">5</option>
+                               <option value="06">6</option>
+                               <option value="07">7</option>
+                               <option value="08">8</option>
+                               <option value="09">9</option>
+                               <option value="10">10</option>
+                               <option value="11">11</option>
+                               <option value="12">12</option>
+                               <option value="13">13</option>
+                               <option value="14">14</option>
+                               <option value="15">15</option>
+                               <option value="16">16</option>
+                               <option value="17">17</option>
+                               <option value="18">18</option>
+                               <option value="19">19</option>
+                               <option value="20">20</option>
+                               <option value="21">21</option>
+                               <option value="22">22</option>
+                               <option value="23">23</option>
+                               <option value="24">24</option>
+                               <option value="25">25</option>
+                               <option value="26">26</option>
+                               <option value="27">27</option>
+                               <option value="28">28</option>
+                               <option value="29">29</option>
+                               <option value="30">30</option>
+                               <option value="31">31</option>
+                             </select>
+                             <label for="year">Year
+                             </label>
+                             <select id="year"
+                             name="year">
+                             	<option value="2019">2016</option>
+                                <option value="2020">2017</option>
+                                <option value="2021">2018</option>
+                             </select>
+                             <label for="time">Time
+                             </label>
+                             <select id="time"
+                             name="time">
+                             	<option value="11">11 AM</option>
+                                <option value="12">12 PM</option>
+                                <option value="13"> 1 PM</option>
+                                <option value="14"> 2 PM</option>
+                                <option value="15"> 3 PM</option>
+                                <option value="16"> 4 PM</option>
+                                <option value="17"> 5 PM</option>
+                                <option value="18"> 6 PM</option>
+                                <option value="19"> 7 PM</option>
+                                <option value="20"> 8 PM</option>
+                             </select>
+                           </div>       
+                        </fieldset>
+                        <fieldset class="location">
+                        	<legend>How many people will come?</legend>
+                            <label for="oneTofour">
+                            	<input type="radio" id="oneTofour" value="oneTofour" checked name="numPeople">
+                                1-4
+                            </label>
+                            <label for="fourTosix">
+                            	<input type="radio" id="fourTosix" value="fourTosix" name="numPeople">
+                                4-6
+                            </label>
+                            <label for="sixMore">
+                            	<input type="radio" id="sixMore" value="sixMore" name="numPeople">
+                                6 or more
+                            </label>
+                        </fieldset>
+                        <fieldset class="submitbutton">
+                			<input type="submit" id="submit" value="Sumit"
+               			</fieldset>
+                </fieldset>
+            </form>
+         </article>
+         <footer>
+            <p>25950 N Dixie Hwy, Perrysburg, OH 43551</p>
+         </footer>
+      </div>
+   </body>
+</html>

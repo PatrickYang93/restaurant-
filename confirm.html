@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>YaYa Kitchen</title>
+      <!-- 
+         YaYa Kitchen result web page
+         Filename: index.html
+
+         Author:   Qiguang Yang	
+         Date:     3/29/2016
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="../WebsiteProject/modernizr.custom.40753.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="../WebsiteProject/styles.css">
+   </head>
+   <p class="skipnavigation"><a href="#contentstart">Skip Navigation</a></p>
+   <body>
+         <header>
+         <img id="logo" src="../WebsiteProject/images/logo.jpg" alt="rf" width="55" height="55" id="logo" align="left">
+            <h1>YaYa Kitchen</h1>
+            <nav class="sitenavigation">
+            	<p><a href="../WebsiteProject/index.html" >Home</a></p>
+                <p><a href="../WebsiteProject/menu.html">Menu</a></p>
+                <p><a href="../WebsiteProject/order.html">Order Now!</a></p>
+                <p><a href="../WebsiteProject/reserve.html">Reservations</a></p>
+                <p><a href="../WebsiteProject/aboutus.html">About Us</a></p>
+                <p><a href="https://goo.gl/maps/fWWRZ1myCp62" target="_blank">Directrions</a></p>
+            </nav>
+         </header>
+      <article id="contentstart">
+         <div class="container">
+            <h2>Your form has been submitted!</h2>
+         </div>
+         
+         <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+        </script>
+       
+      </article>
+      <footer>
+            <p>25950 N Dixie Hwy, Perrysburg, OH 43551</p>
+         </footer>
+   </body>
+</html>
